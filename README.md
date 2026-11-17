@@ -1,18 +1,21 @@
 # EduFlow — Automação de avaliações escolares
 
-Projeto de automação para cadastro, organização e acompanhamento de avaliações de alunos por turma.
+**Status:** protótipo didático local e integração escolar em desenvolvimento.
 
-## Problema
-O acompanhamento manual de várias turmas pode gerar retrabalho e dificultar a localização de registros.
+## Executar
+Requer Python 3.10+:
 
-## Funcionalidades em desenvolvimento
-- Cadastro inicial de alunos
-- Organização por ano e turma (ex.: PRÉ I A e PRÉ II B)
-- Processamento de avaliações
-- Integração entre Google Sheets, Apps Script e Python
-- Organização de backups e painel da coordenação
+```bash
+python eduflow.py
+```
 
-## Tecnologias
-Python, Google Sheets e Google Apps Script.
+O script cria **alunos fictícios**, organiza registros por turma (ex.: PRÉ I A e PRÉ II B), gera CSV e salva um backup separado. Os arquivos gerados ficam em `data/`, ignorado pelo Git.
 
-**Status:** em desenvolvimento. Usar somente dados fictícios nos exemplos; nunca publicar dados de alunos ou JSON de contas de serviço.
+Testes: `python -m unittest discover -v`.
+
+## Evolução
+Integração com Google Sheets e Apps Script, avaliação por aluno, painel de coordenação e backups automatizados. Essas integrações **não estão implementadas no código demonstrativo deste repositório**.
+
+**Privacidade:** nunca publique informações reais de alunos, credenciais ou JSON de conta de serviço.
+
+[Portfólio](https://damkccn.github.io/damaris-portfolio/cases/eduflow.html) · [Instruções](DEVELOPMENT.md)
